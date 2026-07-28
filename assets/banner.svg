@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Bodhana Jayawickrama — software engineer intern at Torch Labs">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="78%" r="60%">
+      <stop offset="0%" stop-color="#A277FF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#A277FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#241E45" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#241E45" stop-opacity="1"/>
+      <stop offset="82%" stop-color="#241E45" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#241E45" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="338" rx="18" fill="#0D0B1F" stroke="#241E45" stroke-width="1.5"/>
+  <rect x="1" y="1" width="1198" height="338" rx="18" fill="url(#glow)"/>
+
+  <!-- eyebrow -->
+  <text x="72" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="13" letter-spacing="4.5" fill="#8A87A8">UNIVERSITY OF KELANIYA</text>
+
+  <!-- name -->
+  <text x="72" y="146" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="56" font-weight="700" letter-spacing="-1" fill="#EDECEE">Bodhana Jayawickrama</text>
+
+  <!-- subtitle -->
+  <text x="74" y="184" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="17" fill="#A277FF">software engineer intern @ torch labs</text>
+
+  <line x1="72" y1="220" x2="1128" y2="220" stroke="url(#rule)" stroke-width="1"/>
+
+  <!-- pipeline track -->
+  <line x1="120" y1="266" x2="1080" y2="266" stroke="#241E45" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120" y1="266" x2="1080" y2="266" stroke="#61FFCA" stroke-width="2" stroke-linecap="round"
+        stroke-dasharray="960" stroke-dashoffset="960" opacity="0.75">
+    <animate attributeName="stroke-dashoffset" values="960;0;0;960" keyTimes="0;0.72;0.92;1"
+             dur="7s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- travelling record -->
+  <circle cy="266" r="7" fill="#61FFCA" opacity="0.35" filter="url(#soft)">
+    <animate attributeName="cx" values="120;1080;1080" keyTimes="0;0.72;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.35;0.35;0" keyTimes="0;0.72;0.92" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cy="266" r="3.5" fill="#61FFCA">
+    <animate attributeName="cx" values="120;1080;1080" keyTimes="0;0.72;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.72;0.92" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- nodes -->
+  <g stroke="#2E2757" stroke-width="2">
+    <circle cx="120" cy="266" r="9" fill="#171334">
+      <animate attributeName="fill" values="#171334;#61FFCA;#61FFCA;#171334" keyTimes="0;0.02;0.9;1" dur="7s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="360" cy="266" r="9" fill="#171334">
+      <animate attributeName="fill" values="#171334;#61FFCA;#61FFCA;#171334" keyTimes="0;0.02;0.9;1" dur="7s" begin="1.26s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="266" r="9" fill="#171334">
+      <animate attributeName="fill" values="#171334;#61FFCA;#61FFCA;#171334" keyTimes="0;0.02;0.9;1" dur="7s" begin="2.52s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="840" cy="266" r="9" fill="#171334">
+      <animate attributeName="fill" values="#171334;#61FFCA;#61FFCA;#171334" keyTimes="0;0.02;0.9;1" dur="7s" begin="3.78s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="266" r="9" fill="#171334">
+      <animate attributeName="fill" values="#171334;#FFCA85;#FFCA85;#171334" keyTimes="0;0.02;0.9;1" dur="7s" begin="5.04s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- node labels -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5"
+     fill="#8A87A8" text-anchor="middle" letter-spacing="1">
+    <text x="120" y="300">ingest</text>
+    <text x="360" y="300">transform</text>
+    <text x="600" y="300">train</text>
+    <text x="840" y="300">evaluate</text>
+    <text x="1080" y="300">deploy</text>
+  </g>
+</svg>
